@@ -10,13 +10,13 @@ const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 let cart = [];
 
-// Open modal
+// fechar modal
 cartBtn.addEventListener("click", function () {
     updateCartModal();
     cartModal.style.display = "flex";
 });
 
-// Close modal
+// abrir modal
 cartModal.addEventListener("click", function (event) {
     if (event.target === cartModal) {
         cartModal.style.display = "none";
@@ -34,7 +34,7 @@ menu.addEventListener("click", function (event) {
         const name = parentButton.getAttribute("data-name");
         const price = parseFloat(parentButton.getAttribute("data-price"));
 
-        // Add to cart
+        // add ao carrinho
         addToCart(name, price);
     }
 });
@@ -42,7 +42,7 @@ menu.addEventListener("click", function (event) {
 function addToCart(name, price) {
     const existingItem = cart.find(item => item.name === name);
     if (existingItem) {
-        // If the item exists, only increase the quantity
+        // if se existir o item ele so aumentar a quantidade
         existingItem.quantity += 1;
     } else {
         cart.push({
@@ -54,7 +54,7 @@ function addToCart(name, price) {
     updateCartModal();
 }
 
-// Update cart
+// atualizar card
 function updateCartModal() {
     cartItemsContainer.innerHTML = "";
     let total = 0;
@@ -84,7 +84,7 @@ function updateCartModal() {
     cartCounter.innerHTML = cart.length;
 }
 
-// Remover item 
+// Remove item 
 cartItemsContainer.addEventListener("click", function (event) {
     if (event.target.classList.contains("remove-from-cart-btn")) {
         const name = event.target.getAttribute("data-name");
@@ -97,8 +97,8 @@ function removeItemcart(name){
 
     if(index!== -1){
         const item= cart[index];
-        if(item.quantity> 1 ){
-            item.quantity-=1;
+        if(item.quantity > 1 ){
+            item.quantity -= 1;
             updateCartModal();
             return;
         }
@@ -108,39 +108,39 @@ function removeItemcart(name){
 }
 
 addressInput.addEventListener("input", function(event){
-    let inputvalue= event.target.value;
-    if(inputvalue !== ""){
-        addressInput.classList.remove("border-red-500")
-        addressWarn.classList.add("hidden")
+    let inputValue= event.target.value;
+    if(inputValue !== ""){
+        addressInput.classList.remove("border-red-500");
+        addressWarn.classList.add("hidden");
     }
-})
-//Finalizar pedido
+});
+
+// Finalizar pedido
 checkoutBtn.addEventListener("click", function(){
-    const isOpen= ckeckrestaurantopen();
+    const isOpen = checkRestaurantOpen();
     if(!isOpen){
-        alert("RESTAURANTE FECHADO NO MOMENTO!")
+        alert("RESTAURANTE FECHADO NO MOMENTO!");
         return;
     }
 
-
-    if(cart.length===0) return;
-    if(addressInput.value===""){
-        addressWarn.classList.remove("hiddem")
-        addressInput.classList.add("border-red-500")
+    if(cart.length === 0) return;
+    if(addressInput.value === ""){
+        addressWarn.classList.remove("hidden");
+        addressInput.classList.add("border-red-500");
         return;
     }
-})
+});
 
-//verificar a hora e manipular o card horario 
-function ckeckrestaurantopen(){
+// Verificar a hora e manipular o card horário 
+function checkRestaurantOpen(){
     const data = new Date();
-    const hora= data.getHours();
-    return hora => 18 && hora < 23;
-    //true = restaurante esta aberto 
+    const hora = data.getHours();
+    // const min = min.getMinutes()
+    return hora >= 18 && hora < 23; // True = restaurante está aberto 
 }
 
-const spanItem=document.getElementById("data-span")
-const isOpen= ckeckrestaurantopen();
+const spanItem = document.getElementById("data-span");
+const isOpen = checkRestaurantOpen();
 
 if(isOpen){
     spanItem.classList.remove("bg-red-500");
