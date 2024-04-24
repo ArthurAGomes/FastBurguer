@@ -2,8 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     background-color: #f6f7f8;
 }
 
+header{
+    padding: 24px 8%;
+}
 
+.nav-item a{
+    font-weight: 600;
+    
+}

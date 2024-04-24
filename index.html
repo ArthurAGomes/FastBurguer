@@ -14,35 +14,34 @@
 </head>
 
 <body>
-<!-- bg-home imagem de fundo do header -->
-    <header class="w-full h-[420px]  bg-cover bg-center">
-        <nav id="navbar" class="w-full flex items-center justify-between">
-            <i class="fa-solid fa-burger text-2xl" id="nav_logo"> Fast Burguer</i>
+    <!--  imagem de fundo do header  -->
+    <header class="w-full bg-home bg-cover bg-center">
 
-            <ul id="nav_list" class="flex gap-12">
-                <li class="nav-item active">
-                    <a href="#home">Início</a>
+        <nav id="navbar" class=" hidden w-full items-center justify-between text-white p-2">
+            <i class="fa-solid fa-burger text-2xl shadow-lg hover:scale-110 duration-200" id="nav_logo"> Fast Burguer</i>
+            <ul id="nav_list" class="flex gap-14">
+                <li class="nav-item shadow-lg hover:scale-110 duration-200">
+                    <a href="#home" >Início</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#menu">Cardápio</a>
+                <li class="nav-item shadow-lg hover:scale-110 duration-200">
+                    <a href="#menu" >Cardápio</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item shadow-lg hover:scale-110 duration-200">
                     <a href="#testimonials">Avaliações</a>
                 </li>
             </ul>
-
-            <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+            <button class="flex items-center gap-2 text-white justify-center bg-amber-900 p-2 rounded-lg shadow-btn" id="cart-btn">
                 (<span id="cart-count">0</span>)
-                Veja meu carrinho
-                <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                  Carrinho
+                <i class="fa-solid fa-cart-shopping text-white"></i>
             </button>
-
-            <button id="mobile_btn">
+            <button id="mobile_btn" class="block">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
 
-        <div id="mobile_menu">
+
+        <div id="mobile_menu" class="text-white">
             <ul id="mobile_nav_list">
                 <li class="nav-item">
                     <a href="#home">Início</a>
@@ -55,14 +54,16 @@
                 </li>
             </ul>
 
-            <button class="btn-default">
-                Peça aqui
+            <button class="flex items-center gap-2 text-white justify-center rounded-lg shadow-btn" id="cart-btn">
+                (<span id="cart-count">0</span>)
+                  Carrinho
+                <i class="fa-solid fa-cart-shopping text-white"></i>
             </button>
         </div>
         <div class="w-full h-full flex flex-col justify-center items-center">
             <img src="assets/logo-lache.jpg" alt="Logo-fastburguer"
                 class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
-            <h1 class="text-4x1 mt-4 mb-2 font-bold text-white">Fast Burguer</h1>
+            <!-- <h1 class="text-4x1 mt-4 mb-2 font-bold text-white">Fast Burguer</h1> -->
             <span class="text-white font-medium">Endereço</span>
             <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="data-span">
                 <span class="text-white font-medium">Seg á Dom- 18:00 as 23:00</span>
@@ -86,7 +87,7 @@
                             <p>R$20,00</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer da casa"
                                 data-price="20,00">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
+                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
                     </div>
@@ -255,7 +256,7 @@
 
 
         <footer>
-            
+
         </footer>
         <script src="script.js"></script>
 </body>
