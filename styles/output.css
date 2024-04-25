@@ -1443,8 +1443,8 @@ video {
   justify-items: stretch;
 }
 
-.gap-14 {
-  gap: 3.5rem;
+.gap-11 {
+  gap: 2.75rem;
 }
 
 .gap-2 {
@@ -1453,22 +1453,6 @@ video {
 
 .gap-7 {
   gap: 1.75rem;
-}
-
-.gap-16 {
-  gap: 4rem;
-}
-
-.gap-20 {
-  gap: 5rem;
-}
-
-.gap-24 {
-  gap: 6rem;
-}
-
-.gap-1 {
-  gap: 0.25rem;
 }
 
 .space-x-2 > :not([hidden]) ~ :not([hidden]) {
@@ -2690,6 +2674,31 @@ header{
   font-weight: 600;
 }
 
+#mobile_menu{
+  display: none;
+}
+
+#mobile_menu.active{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  #mobile_menu{
+    display:none;
+  }
+
+  #nav_list{
+    display: flex;
+  }
+
+  #mobile_btn{
+    display: none;
+  }
+}
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;
@@ -2760,10 +2769,6 @@ header{
 }
 
 @media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:underline {
     text-decoration-line: underline;
   }
@@ -2784,10 +2789,6 @@ header{
 
   .md\:gap-10 {
     gap: 2.5rem;
-  }
-
-  .md\:\*\:flex > * {
-    display: flex;
   }
 }
 

@@ -20,3 +20,28 @@ header{
     font-weight: 600;
     
 }
+#mobile_menu{
+    display: none;
+}
+
+#mobile_menu.active{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    #mobile_menu{
+        display:none;
+    }
+    
+    #nav_list{
+        display: flex;
+    }
+    #mobile_btn{
+        display: none;
+    }
+}

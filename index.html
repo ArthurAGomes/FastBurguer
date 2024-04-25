@@ -4,11 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+        integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
     <link rel="stylesheet" href="./styles/output.css">
     <title>Fast Burger</title>
 </head>
@@ -17,33 +18,30 @@
     <!--  imagem de fundo do header  -->
     <header class="w-full bg-home bg-cover bg-center">
 
-        <nav id="navbar" class=" hidden w-full items-center justify-between text-white p-2">
-            <i class="fa-solid fa-burger text-2xl shadow-lg hover:scale-110 duration-200" id="nav_logo"> Fast Burguer</i>
-            <ul id="nav_list" class="flex gap-14">
+        <nav id="navbar" class=" w-full flex items-center justify-between text-white p-2">
+            <i class="fa-solid fa-burger text-2xl shadow-lg hover:scale-110 duration-200" id="nav_logo"> Fast
+                Burguer</i>
+            <ul id="nav_list" class="gap-11 hidden">
                 <li class="nav-item shadow-lg hover:scale-110 duration-200">
-                    <a href="#home" >Início</a>
+                    <a href="#home">Início</a>
                 </li>
                 <li class="nav-item shadow-lg hover:scale-110 duration-200">
-                    <a href="#menu" >Cardápio</a>
+                    <a href="#menu">Cardápio</a>
                 </li>
                 <li class="nav-item shadow-lg hover:scale-110 duration-200">
                     <a href="#testimonials">Avaliações</a>
                 </li>
             </ul>
-            <button class="flex items-center gap-2 text-white justify-center bg-amber-900 p-2 rounded-lg shadow-btn" id="cart-btn">
-                (<span id="cart-count">0</span>)
-                  Carrinho
-                <i class="fa-solid fa-cart-shopping text-white"></i>
-            </button>
-            <button id="mobile_btn" class="block">
+            
+            <button id="mobile_btn" class="md:hidden">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </nav>
 
 
         <div id="mobile_menu" class="text-white">
-            <ul id="mobile_nav_list">
-                <li class="nav-item">
+            <ul id="mobile_nav_list" class="">
+                <li class="nav-item ">
                     <a href="#home">Início</a>
                 </li>
                 <li class="nav-item">
@@ -52,16 +50,11 @@
                 <li class="nav-item">
                     <a href="#testimonials">Avaliações</a>
                 </li>
-            </ul>
 
-            <button class="flex items-center gap-2 text-white justify-center rounded-lg shadow-btn" id="cart-btn">
-                (<span id="cart-count">0</span>)
-                  Carrinho
-                <i class="fa-solid fa-cart-shopping text-white"></i>
-            </button>
+            </ul>
         </div>
         <div class="w-full h-full flex flex-col justify-center items-center">
-            <img src="assets/logo-lache.jpg" alt="Logo-fastburguer"
+            <img src="assets/hamb-7.png" alt="Logo-fastburguer"
                 class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
             <!-- <h1 class="text-4x1 mt-4 mb-2 font-bold text-white">Fast Burguer</h1> -->
             <span class="text-white font-medium">Endereço</span>
@@ -71,8 +64,16 @@
         </div>
     </header>
 
+    <div class="flex justify-center items-center">
+        <button
+        class=" w-full items-center gap-2 text-white justify-center bg-amber-900 p-2 rounded-b shadow-btn hover:scale-110 duration-200"
+        id="cart-btn">
+        (<span id="cart-count">0</span>)
+        Carrinho
+        <i class="fa-solid fa-cart-shopping text-white"></i>
+    </button>
+    </div>
     <h2 class="text-2xl md:text-3x1 font-bold text-center mt-9 mb-6">Conheça nosso menu</h2>
-
     <div class="flex justify-center items-center">
         <div id="menu">
             <main
@@ -102,7 +103,7 @@
                             <p>R$19,00</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Cheddar"
                                 data-price="19,00">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
+                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
                     </div>
@@ -117,7 +118,7 @@
                             <p>R$17,00</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
                                 data-price="17,00">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
+                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
                     </div>
@@ -132,7 +133,7 @@
                             <p>R$18,00</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="X Chicken"
                                 data-price="18,00">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
+                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
                     </div>
@@ -147,7 +148,7 @@
                             <p>R$17,00</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="X Salada"
                                 data-price="17,00">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
+                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
                     </div>
@@ -162,7 +163,7 @@
                             <p>R$26,00</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Especial"
                                 data-price="26,00">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
+                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
                     </div>
@@ -177,7 +178,7 @@
                             <p>R$27,00</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Burguer Onion Rings"
                                 data-price="27,00">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
+                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
                     </div>
@@ -192,7 +193,7 @@
                             <p>R$19,00</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Vegano"
                                 data-price="19,00">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
+                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
                     </div>
@@ -213,7 +214,7 @@
                             <p>R$6,00</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-cola"
                                 data-price="6">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
+                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
                     </div>
@@ -226,12 +227,13 @@
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$5,00</p>
                             <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana" data-price="5">
-                                <i class="fa-solid fa-cart-shopping text-white"></i>
+                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
+
         </div>
         <!-- CARRINHO MODAL -->
         <div class="bg-black/60 w-full h-full fixed top-0 left-0 z[99] hidden items-center justify-center"
@@ -253,12 +255,28 @@
                 </div>
             </div>
         </div>
+    
+    </div>
+    <div class="" id="contato">
+
+    </div>
+<!-- Parte de contato -->
+
+
+
+
+
+
+
 
 
         <footer>
 
         </footer>
+
+        <script src="menu.js"></script>
         <script src="script.js"></script>
+    
 </body>
 
 </html>

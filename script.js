@@ -9,14 +9,13 @@ const cartCounter = document.getElementById("cart-count");
 const addressInput = document.getElementById("address");
 const addressWarn = document.getElementById("address-warn");
 let cart = [];
-
-// fechar modal
+// abrir modal
 cartBtn.addEventListener("click", function () {
     updateCartModal();
     cartModal.style.display = "flex";
 });
 
-// abrir modal
+// fechar modal
 cartModal.addEventListener("click", function (event) {
     if (event.target === cartModal) {
         cartModal.style.display = "none";
