@@ -11,12 +11,13 @@
         integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/output.css">
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
     <title>Fast Burger</title>
 </head>
 
 <body>
     <!--  imagem de fundo do header  -->
-    <header class="w-full bg-home bg-cover bg-center">
+    <header class="w-full bg-cover bg-center ">
 
         <nav id="navbar" class=" w-full flex items-center justify-between text-white p-2">
             <i class="fa-solid fa-burger text-2xl shadow-lg hover:scale-110 duration-200" id="nav_logo"> Fast
@@ -54,28 +55,52 @@
             </ul>
         </div>
         <div class="w-full h-full flex flex-col justify-center items-center">
-            <img src="assets/hamb-7.png" alt="Logo-fastburguer"
-                class="w-32 h-32 rounded-full shadow-lg hover:scale-110 duration-200">
-            <!-- <h1 class="text-4x1 mt-4 mb-2 font-bold text-white">Fast Burguer</h1> -->
-            <span class="text-white font-medium">Endereço</span>
-            <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="data-span">
-                <span class="text-white font-medium">Seg á Dom- 18:00 as 23:00</span>
-            </div>
+            
+            
         </div>
     </header>
-
+    <!-- parte de inicio -->
+    <div id="inicio">
+        <div class="flex flex-row h-[60vh] max-w-[1120px] justify-between gap-24 py-1 px-9 m-auto overflow-clip text-white">
+            <div class="flex flex-col gap-4 ">
+                <span class="uppercase text-amber-900">Novidades</span>
+                <h1 class="text-4xl">Encontre os lanches perfeitos!</h1>
+                <hr class="border-amber-800">
+                <h2 class="hero-sub">Explore dezenas de lanches favoritos entre os amantes de hamburgueres ao redor mundo!</h2>
+                 <span class="text-white font-medium text-center mt-2">Av. Itaberaba, 549 - Freguesia do Ó</span>
+                    <div class="bg-green-600 px-4 py-1 rounded-lg" id="data-span">
+                        <span class="text-white font-medium">Seg á Dom- 18:00 as 23:00</span>
+                </div>
+            </div>
+            <div class="max-w-[45%] hidden md:block" id="inicio-fotos">
+                <figure><img src="assets/hamb-1.png" alt=""></figure>
+                <figure><img src="assets/hamb-2.png" alt=""></figure>
+                <figure><img src="assets/hamb-3.png" alt=""></figure>
+                <figure><img src="assets/hamb-4.png" alt=""></figure>
+                <figure><img src="assets/herobanner-3.png" alt=""></figure>
+                <figure><img src="assets/hamb-5.png" alt=""></figure>
+                <figure><img src="assets/hamb-6.png" alt=""></figure>
+                <figure><img src="assets/hamb-7.png" alt=""></figure>
+                <figure><img src="assets/hamb-8.png" alt=""></figure>
+                <figure><img src="assets/herobanner-9.png" alt=""></figure>
+        
+        
+        
+            </div>
+    </div>
+    </div>
     <div class="flex justify-center items-center">
         <button
-        class=" w-full items-center gap-2 text-white justify-center bg-amber-900 p-2 rounded-b shadow-btn hover:scale-110 duration-200"
+        class=" w-full items-center gap-2 text-white justify-center bg-amber-95000 p-2 rounded-b shadow-btn hover:scale-110 duration-200"
         id="cart-btn">
         (<span id="cart-count">0</span>)
         Carrinho
         <i class="fa-solid fa-cart-shopping text-white"></i>
     </button>
     </div>
-    <h2 class="text-2xl md:text-3x1 font-bold text-center mt-9 mb-6">Conheça nosso menu</h2>
+    <h2 class="text-2xl md:text-3x1 font-bold text-center mt-9 mb-6 text-white">Conheça nosso menu</h2>
     <div class="flex justify-center items-center">
-        <div id="menu">
+        <div id="menu" class="text-white">
             <main
                 class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:grid-cols-3 mx-auto max-w-7xl px-2 mb-16 items-center">
                 <div class="flex gap-2">
@@ -86,7 +111,7 @@
                         <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$20,00</p>
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer da casa"
+                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer da casa"
                                 data-price="20,00">
                                 <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
@@ -101,7 +126,7 @@
                         <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$19,00</p>
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Cheddar"
+                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Cheddar"
                                 data-price="19,00">
                                 <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
@@ -116,7 +141,7 @@
                         <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$17,00</p>
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
+                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
                                 data-price="17,00">
                                 <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
@@ -131,7 +156,7 @@
                         <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$18,00</p>
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="X Chicken"
+                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="X Chicken"
                                 data-price="18,00">
                                 <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
@@ -146,7 +171,7 @@
                         <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$17,00</p>
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="X Salada"
+                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="X Salada"
                                 data-price="17,00">
                                 <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
@@ -161,7 +186,7 @@
                         <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$26,00</p>
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Especial"
+                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Especial"
                                 data-price="26,00">
                                 <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
@@ -176,7 +201,7 @@
                         <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$27,00</p>
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Burguer Onion Rings"
+                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Burguer Onion Rings"
                                 data-price="27,00">
                                 <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
@@ -191,7 +216,7 @@
                         <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$19,00</p>
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Vegano"
+                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Vegano"
                                 data-price="19,00">
                                 <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
@@ -212,7 +237,7 @@
                         <p class="font-bold">Coca-cola</p>
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$6,00</p>
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Coca-cola"
+                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Coca-cola"
                                 data-price="6">
                                 <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
@@ -226,7 +251,7 @@
                         <p class="font-bold">Guarana</p>
                         <div class="flex items-center gap-2 justify-between mt-3">
                             <p>R$5,00</p>
-                            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Guarana" data-price="5">
+                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Guarana" data-price="5">
                                 <i class="fa fa-cart-plus text-1x2 text-white"></i>
                             </button>
                         </div>
@@ -239,10 +264,10 @@
         <div class="bg-black/60 w-full h-full fixed top-0 left-0 z[99] hidden items-center justify-center"
             id="cart-modal">
 
-            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w[600px]">
+            <div class="bg-white p-5 rounded-md min-w-[90%] md:min-w[600px]  ">
                 <h2 class="text-center font-bold mb-2 text-2xl">Meu carrinho</h2>
 
-                <div id="cart-items" class="flex justify-center mb-2 flex-col"></div>
+                <div id="cart-items" class="flex justify-center mb-3 flex-col overflow-auto h-52"> </div>
                 <p class="font-bold">Total: <span id="cart-total">0.00</span></p>
                 <p class="font-bold mt-4"> Endereço de entrega:</p>
                 <input type="text" placeholder="Digite seu endereço completo..." id="address"
@@ -256,19 +281,9 @@
             </div>
         </div>
     
-    </div>
-    <div class="" id="contato">
-
-    </div>
+    </div> -->
+    
 <!-- Parte de contato -->
-
-
-
-
-
-
-
-
 
         <footer>
 
