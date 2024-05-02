@@ -47,7 +47,8 @@ header{
 #inicio-fotos{
     column-gap: 1rem;
     column-count: 4;
-    margin: -1rem;
+    margin: 0.5rem;
+    
 }
 
 

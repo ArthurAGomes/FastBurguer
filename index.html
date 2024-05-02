@@ -33,7 +33,7 @@
                     <a href="#testimonials">Avaliações</a>
                 </li>
             </ul>
-            
+
             <button id="mobile_btn" class="md:hidden">
                 <i class="fa-solid fa-bars"></i>
             </button>
@@ -55,209 +55,212 @@
             </ul>
         </div>
         <div class="w-full h-full flex flex-col justify-center items-center">
-            
-            
+
+
         </div>
     </header>
     <!-- parte de inicio -->
-    <div id="inicio">
-        <div class="flex flex-row h-[60vh] max-w-[1120px] justify-between gap-24 py-1 px-9 m-auto overflow-clip text-white">
-            <div class="flex flex-col gap-4 ">
-                <span class="uppercase text-amber-900">Novidades</span>
-                <h1 class="text-4xl">Encontre os lanches perfeitos!</h1>
-                <hr class="border-amber-800">
-                <h2 class="hero-sub">Explore dezenas de lanches favoritos entre os amantes de hamburgueres ao redor mundo!</h2>
-                 <span class="text-white font-medium text-center mt-2">Av. Itaberaba, 549 - Freguesia do Ó</span>
+    <section>
+        <div id="inicio">
+            <div
+                class="flex flex-row h-[60vh] max-w-[1120px] justify-between gap-24 py-1 px-9 m-auto overflow-clip text-white">
+                <div class="flex flex-col gap-4 ">
+                    <span class="uppercase text-amber-900">Novidades</span>
+                    <h1 class="text-4xl">Encontre os lanches perfeitos!</h1>
+                    <hr class="border-amber-800">
+                    <h2 class="hero-sub">Explore dezenas de lanches favoritos entre os amantes de hamburgueres ao redor
+                        mundo!</h2>
+                    <span class="text-white font-medium text-center mt-2">Av. Itaberaba, 549 - Freguesia do Ó</span>
                     <div class="bg-green-600 px-4 py-1 rounded-lg" id="data-span">
                         <span class="text-white font-medium">Seg á Dom- 18:00 as 23:00</span>
+                    </div>
+                </div>
+                <div class="max-w-[45%] hidden md:block mt-10" id="inicio-fotos">
+                    <figure><img src="assets/hamb-1.png" alt=""></figure>
+                    <figure><img src="assets/hamb-2.png" alt=""></figure>
+                    <figure><img src="assets/hamb-3.png" alt=""></figure>
+                    <figure><img src="assets/hamb-4.png" alt=""></figure>
+                    <figure><img src="assets/herobanner-3.png" alt=""></figure>
+                    <figure><img src="assets/hamb-5.png" alt=""></figure>
+                    <figure><img src="assets/hamb-6.png" alt=""></figure>
+                    <figure><img src="assets/hamb-7.png" alt=""></figure>
+                    <figure><img src="assets/hamb-8.png" alt=""></figure>
+                    <figure><img src="assets/herobanner-9.png" alt=""></figure>
                 </div>
             </div>
-            <div class="max-w-[45%] hidden md:block" id="inicio-fotos">
-                <figure><img src="assets/hamb-1.png" alt=""></figure>
-                <figure><img src="assets/hamb-2.png" alt=""></figure>
-                <figure><img src="assets/hamb-3.png" alt=""></figure>
-                <figure><img src="assets/hamb-4.png" alt=""></figure>
-                <figure><img src="assets/herobanner-3.png" alt=""></figure>
-                <figure><img src="assets/hamb-5.png" alt=""></figure>
-                <figure><img src="assets/hamb-6.png" alt=""></figure>
-                <figure><img src="assets/hamb-7.png" alt=""></figure>
-                <figure><img src="assets/hamb-8.png" alt=""></figure>
-                <figure><img src="assets/herobanner-9.png" alt=""></figure>
-        
-        
-        
-            </div>
-    </div>
-    </div>
-    <div class="flex justify-center items-center">
-        <button
-        class=" w-full items-center gap-2 text-white justify-center bg-amber-95000 p-2 rounded-b shadow-btn hover:scale-110 duration-200"
-        id="cart-btn">
-        (<span id="cart-count">0</span>)
-        Carrinho
-        <i class="fa-solid fa-cart-shopping text-white"></i>
-    </button>
-    </div>
-    <h2 class="text-2xl md:text-3x1 font-bold text-center mt-9 mb-6 text-white">Conheça nosso menu</h2>
-    <div class="flex justify-center items-center">
-        <div id="menu" class="text-white">
-            <main
-                class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:grid-cols-3 mx-auto max-w-7xl px-2 mb-16 items-center">
-                <div class="flex gap-2">
-                    <img src="assets/hamb-1.png" alt="Hamburguer da casa"
-                        class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
-                    <div class="w-36">
-                        <p class="font-bold">Hamburguer da casa</p>
-                        <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p>R$20,00</p>
-                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer da casa"
-                                data-price="20,00">
-                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
-                            </button>
+        </div>
+    </section>
+    <section>
+        <div class="flex justify-center items-center">
+            <button
+                class=" w-full items-center gap-2 text-white justify-center bg-amber-95000 p-2 rounded-b shadow-btn hover:scale-110 duration-200"
+                id="cart-btn">
+                (<span id="cart-count">0</span>)
+                Carrinho
+                <i class="fa-solid fa-cart-shopping text-white"></i>
+            </button>
+        </div>
+        <h2 class="text-2xl md:text-3x1 font-bold text-center mt-9 mb-6 text-white">Conheça nosso menu</h2>
+        <div class="flex justify-center items-center">
+            <div id="menu" class="text-white">
+                <main
+                    class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:grid-cols-3 mx-auto max-w-7xl px-2 mb-16 items-center">
+                    <div class="flex gap-2">
+                        <img src="assets/hamb-1.png" alt="Hamburguer da casa"
+                            class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
+                        <div class="w-36">
+                            <p class="font-bold">Hamburguer da casa</p>
+                            <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p>R$20,00</p>
+                                <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer da casa"
+                                    data-price="20,00">
+                                    <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="assets/hamb-2.png" alt="Hamburguer Cheddar"
+                            class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
+                        <div class="w-36">
+                            <p class="font-bold">Hamburguer Cheddar</p>
+                            <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p>R$19,00</p>
+                                <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Cheddar"
+                                    data-price="19,00">
+                                    <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="assets/hamb-3.png" alt="Hamburguer Smash"
+                            class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
+                        <div class="w-36">
+                            <p class="font-bold">Hamburguer Smash</p>
+                            <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p>R$17,00</p>
+                                <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
+                                    data-price="17,00">
+                                    <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="assets/hamb-4.png" alt="X Chicken"
+                            class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
+                        <div class="w-36">
+                            <p class="font-bold">X Chicken</p>
+                            <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p>R$18,00</p>
+                                <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="X Chicken"
+                                    data-price="18,00">
+                                    <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="assets/hamb-5.png" alt="X Salada"
+                            class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
+                        <div class="w-36">
+                            <p class="font-bold">X Salada</p>
+                            <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p>R$17,00</p>
+                                <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="X Salada"
+                                    data-price="17,00">
+                                    <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="assets/hamb-6.png" alt="Hamburguer Especial"
+                            class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
+                        <div class="w-36">
+                            <p class="font-bold">Especial</p>
+                            <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p>R$26,00</p>
+                                <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Especial"
+                                    data-price="26,00">
+                                    <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="assets/hamb-7.png" alt="Burguer Onion Rings"
+                            class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
+                        <div class="w-36">
+                            <p class="font-bold">Burguer Onion Rings</p>
+                            <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p>R$27,00</p>
+                                <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Burguer Onion Rings"
+                                    data-price="27,00">
+                                    <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="assets/hamb-8.png" alt="Hamburguer Vegano"
+                            class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
+                        <div class="w-36">
+                            <p class="font-bold">Hamburguer Vegano</p>
+                            <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p>R$19,00</p>
+                                <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Vegano"
+                                    data-price="19,00">
+                                    <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </main>
+                <div class="mx-auto max-w-7x1 px-2 my-2">
+                    <h2 " class=" text-2xl md:text-3x1 font-bold mt-9 mb-6">Bebidas</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:grid-cols-3 mx-auto max-w-7xl px-2 mb-16"
+                    id="menu">
+                    <div class="flex gap-2">
+                        <img src="assets/refri-1.png" alt="Coca-cola"
+                            class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
+                        <div class="w-36">
+                            <p class="font-bold">Coca-cola</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p>R$6,00</p>
+                                <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Coca-cola"
+                                    data-price="6">
+                                    <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex gap-2">
+                        <img src="assets/refri-2.png" alt="Guarana"
+                            class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
+                        <div class="w-36">
+                            <p class="font-bold">Guarana</p>
+                            <div class="flex items-center gap-2 justify-between mt-3">
+                                <p>R$5,00</p>
+                                <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Guarana"
+                                    data-price="5">
+                                    <i class="fa fa-cart-plus text-1x2 text-white"></i>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="flex gap-2">
-                    <img src="assets/hamb-2.png" alt="Hamburguer Cheddar"
-                        class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
-                    <div class="w-36">
-                        <p class="font-bold">Hamburguer Cheddar</p>
-                        <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p>R$19,00</p>
-                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Cheddar"
-                                data-price="19,00">
-                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img src="assets/hamb-3.png" alt="Hamburguer Smash"
-                        class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
-                    <div class="w-36">
-                        <p class="font-bold">Hamburguer Smash</p>
-                        <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p>R$17,00</p>
-                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Smash"
-                                data-price="17,00">
-                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img src="assets/hamb-4.png" alt="X Chicken"
-                        class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
-                    <div class="w-36">
-                        <p class="font-bold">X Chicken</p>
-                        <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p>R$18,00</p>
-                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="X Chicken"
-                                data-price="18,00">
-                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img src="assets/hamb-5.png" alt="X Salada"
-                        class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
-                    <div class="w-36">
-                        <p class="font-bold">X Salada</p>
-                        <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p>R$17,00</p>
-                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="X Salada"
-                                data-price="17,00">
-                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img src="assets/hamb-6.png" alt="Hamburguer Especial"
-                        class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
-                    <div class="w-36">
-                        <p class="font-bold">Especial</p>
-                        <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p>R$26,00</p>
-                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Especial"
-                                data-price="26,00">
-                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img src="assets/hamb-7.png" alt="Burguer Onion Rings"
-                        class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
-                    <div class="w-36">
-                        <p class="font-bold">Burguer Onion Rings</p>
-                        <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p>R$27,00</p>
-                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Burguer Onion Rings"
-                                data-price="27,00">
-                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img src="assets/hamb-8.png" alt="Hamburguer Vegano"
-                        class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
-                    <div class="w-36">
-                        <p class="font-bold">Hamburguer Vegano</p>
-                        <p class="text-sm"> Da crocância do pão recém-assado à suculência dos recheios</p>
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p>R$19,00</p>
-                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Hamburguer Vegano"
-                                data-price="19,00">
-                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-            </main>
-            <div class="mx-auto max-w-7x1 px-2 my-2">
-                <h2 " class=" text-2xl md:text-3x1 font-bold mt-9 mb-6">Bebidas</h2>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 lg:grid-cols-3 mx-auto max-w-7xl px-2 mb-16"
-                id="menu">
-                <div class="flex gap-2">
-                    <img src="assets/refri-1.png" alt="Coca-cola"
-                        class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
-                    <div class="w-36">
-                        <p class="font-bold">Coca-cola</p>
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p>R$6,00</p>
-                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Coca-cola"
-                                data-price="6">
-                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-                <div class="flex gap-2">
-                    <img src="assets/refri-2.png" alt="Guarana"
-                        class="w-28 h-28 rounded-md houver:scale-110 hover:-rotate-2 duration-300">
-                    <div class="w-36">
-                        <p class="font-bold">Guarana</p>
-                        <div class="flex items-center gap-2 justify-between mt-3">
-                            <p>R$5,00</p>
-                            <button class="bg-amber-900 px-5 rounded add-to-cart-btn" data-name="Guarana" data-price="5">
-                                <i class="fa fa-cart-plus text-1x2 text-white"></i>
-                            </button>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    </section>
 
         </div>
         <!-- CARRINHO MODAL -->
@@ -280,18 +283,18 @@
                 </div>
             </div>
         </div>
-    
-    </div> -->
-    
-<!-- Parte de contato -->
 
-        <footer>
+    </div> 
 
-        </footer>
+    <!-- Parte de contato -->
 
-        <script src="menu.js"></script>
-        <script src="script.js"></script>
-    
+    <footer>
+
+    </footer>
+
+    <script src="menu.js"></script>
+    <script src="script.js"></script>
+
 </body>
 
 </html>
