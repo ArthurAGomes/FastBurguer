@@ -13,10 +13,21 @@ body{
     background-color: #241a1c;
     /* color: white; */
 }
-
+section{
+    min-height: 80vh;
+}
 header{
     padding: 24px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    background-color: #241a1c;
     
+}
+
+.nav-item.active a{
+    border-radius: 2px;
+    border-bottom: 3px solid  rgb(120 53 15 );
 }
 
 .nav-item a{
