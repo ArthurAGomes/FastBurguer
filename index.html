@@ -12,6 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./styles/output.css">
     <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Fast Burger</title>
 </head>
 
@@ -101,15 +102,6 @@
         </div>
     </section>
     <section>
-        <div class="flex justify-center items-center">
-            <button
-                class=" w-full items-center gap-2 text-white justify-center bg-amber-95000 p-2 rounded-b shadow-btn hover:scale-110 duration-200"
-                id="cart-btn">
-                (<span id="cart-count">0</span>)
-                Carrinho
-                <i class="fa-solid fa-cart-shopping text-white"></i>
-            </button>
-        </div>
         <h2 class="text-2xl md:text-3x1 font-bold text-center mt-9 mb-6 text-white">Conheça nosso menu</h2>
         <div class="flex justify-center items-center">
             <div id="menu" class="text-white">
@@ -270,6 +262,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="flex justify-center items-center">
+                    <button
+                        class=" w-full items-center gap-2 text-white justify-center bg-amber-95000 p-2 rounded-b shadow-btn hover:scale-110 duration-200"
+                        id="cart-btn">
+                        (<span id="cart-count">0</span>)
+                        Carrinho
+                        <i class="fa-solid fa-cart-shopping text-white"></i>
+                    </button>
+                </div>
     </section>
 
     </div>
@@ -303,7 +304,7 @@
 
     <script src="menu.js"></script>
     <script src="script.js"></script>
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
 </body>
 
 </html>
